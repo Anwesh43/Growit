@@ -1,0 +1,9 @@
+<?php
+if(isset($_POST["a"]))
+{
+$a=$_POST["a"];
+$b=explode(",",$a);
+$c=base64_decode($b[1]);
+file_put_contents("Derker.png",$c);
+}
+?>
